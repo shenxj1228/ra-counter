@@ -1,0 +1,17 @@
+{
+  "name": "tohost",
+  "version": "1.0.0",
+  "description": "连接只能投顾联机",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Moonkin",
+  "license": "ISC",
+  "dependencies": {
+    "co-body": "^5.1.1",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "ssh2": "^0.5.4"
+  }
+}
