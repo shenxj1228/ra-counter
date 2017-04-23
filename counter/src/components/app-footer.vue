@@ -1,8 +1,7 @@
 <template>
     <footer>
-        <mu-appbar title="交易列表">
-            <mu-icon-button icon="menu" slot="left" />
-           
+        <mu-appbar title="显示报文">
+            <mu-icon-button icon="expand_less" slot="left" />
         </mu-appbar>
     </footer>
 </template>
