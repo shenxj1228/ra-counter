@@ -5,7 +5,7 @@
       <mu-flat-button label="在途交易" slot="right" />
       <mu-flat-button label="历史交易" slot="right" />
       <mu-icon-menu icon="expand_more" slot="right">
-        <mu-menu-item title="购 买" />
+        <mu-menu-item title="购 买" @click="goToBuy"  />
         <mu-menu-item title="撤 单" />
         <mu-menu-item title="菜单 3" />
         <mu-menu-item title="菜单 4" />
@@ -39,12 +39,15 @@
       },
       openBottomSheet() {
         this.bottomSheet = true
+      },
+      goToBuy(){
+        this.$router.push('/buy');
       }
     }
   }
 
 </script>
-<style scoped>
+<style scoped lang="css">
 
 
 </style>
