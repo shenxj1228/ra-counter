@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "co-body": "^5.1.1",
+    "koa": "^2.0.0-alpha.8",
     "koa-router": "^7.1.1",
     "koa-static": "^3.0.0",
     "ssh2": "^0.5.4"
