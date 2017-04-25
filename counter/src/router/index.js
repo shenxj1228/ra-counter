@@ -13,7 +13,6 @@ export default new Router({
       component: Home
     },{
       path: '/buy',
-      name: 'Buy',
       component: Buy,
       children:[
         {
