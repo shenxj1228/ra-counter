@@ -51,14 +51,42 @@
     computed: {
 
       finished() {
-        return this.activeStep > 2
+        return this.activeStep > 4
       }
     },
     methods: {
       handleNext() {
+        switch(this.activeStep){
+          case 0:
+            this.$router.push({path:'/buy/groupinfo'});
+          break;
+          case 1:
+            this.$router.push({path:'/buy/inputamt'});
+            break;
+          case 2:
+            this.$router.push({path:'/buy/trial'});
+          break;
+          case 3:
+            this.$router.push({path:'/buy/result'});
+            break;
+        }
         this.activeStep++
       },
       handlePrev() {
+         switch(this.activeStep){
+          case 1:
+            this.$router.push({path:'/buy'});
+          break;
+          case 2:
+            this.$router.push({path:'/buy/groupinfo'});
+            break;
+          case 3:
+            this.$router.push({path:'/buy/inputamt'});
+          break;
+          case 4:
+            this.$router.push({path:'/buy/trial'});
+            break;
+        }
         this.activeStep--
       },
       reset() {
